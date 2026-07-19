@@ -1,12 +1,12 @@
-group = "app.template"
+group = "app.heshinth"
 
 patches {
     // TODO: Update this section with your project details.
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
+        name = "Lr Mobile Patches"
+        description = "Patches for Lightroom Mobile based on Revanced"
+        source = "git@github.com:heshinth/lr-mobile-patches.git"
+        author = "heshinth"
         contact = "na"
         website = "na"
         license = "GPLv3"
