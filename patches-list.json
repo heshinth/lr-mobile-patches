@@ -1,32 +1,75 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.1",
+  "version": "1.0.0-dev.2",
   "patches": [
     {
-      "name": "Example Patch",
-      "description": "Example patch to start with.",
+      "name": "Disable mandatory login",
+      "description": "Disables mandatory login by always returning true from isLoggedIn.",
       "default": true,
-      "dependencies": [
-        "BytecodePatch"
-      ],
+      "dependencies": [],
       "compatiblePackages": [
         {
-          "packageName": "com.example.app",
-          "name": "XYZ app",
+          "packageName": "com.adobe.lrmobile",
+          "name": "Lightroom Mobile",
           "description": null,
           "apkFileType": "APK",
-          "appIconColor": "#FF0045",
+          "appIconColor": "#31A8FF",
           "signatures": null,
           "targets": [
             {
-              "version": "2.0.0",
+              "version": "9.3.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
               "description": null
-            },
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Disable version check",
+      "description": "Disables the server-side version check that prevents the app from starting.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.adobe.lrmobile",
+          "name": "Lightroom Mobile",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#31A8FF",
+          "signatures": null,
+          "targets": [
             {
-              "version": "1.0.2",
+              "version": "9.3.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock Premium",
+      "description": "Unlocks premium features by forcing hasPurchased to return true.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.adobe.lrmobile",
+          "name": "Lightroom Mobile",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#31A8FF",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "9.3.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
